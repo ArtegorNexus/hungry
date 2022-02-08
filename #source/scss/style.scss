@@ -1,0 +1,222 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@500;700&display=swap');
+
+body {
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+   color: #03101A;
+   font-size: 16px;
+   line-height: 150%;
+}
+$lh: 120%;
+._container {
+   padding: 0 230px;
+   max-width: 1600px;
+   margin: 0 auto;
+   @media (max-width: 1365px) {
+      padding: 0 180px;
+   }
+   @media (max-width: 1023px) {
+      padding: 0 120px;
+   }
+   @media (max-width: 767px) {
+      padding: 0 70px;
+   }
+   @media (max-width: 479px) {
+      padding: 0 20px;
+   }
+}
+
+.title {
+   font-weight: 700;
+   font-size: 38px;
+   line-height: $lh;
+}
+
+
+
+.button {
+   background-color: white;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px 30px;
+   @media (max-width: 900px) {
+      padding: 10px 20px;
+   }
+   a {
+      font-size: 18px;
+      line-height: 21.6px;
+      color: #03101A;
+      @media (max-width: 900px) {
+         font-size: 14px;
+      }
+   }
+}
+
+/*--------------Контент------------*/
+/*--------------Header-------------*/
+.header {
+   height: 52px;
+   color: white;
+   display: flex;
+   @media (max-width: 767px) {
+      display: none;
+   }
+   &__container {
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+   }
+   &__body {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__text {
+      max-width: 584px;
+      @media (max-width: 1365px) {
+         max-width: 500px;
+      }
+      @media (max-width: 1023px) {
+         max-width: 390px;
+      }
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+         color: white;
+      }
+   }
+   &__logo {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: $lh;
+      width: 100%;
+      @media (max-width: 900px) {
+         font-size: 20px;
+      }
+   }
+   &__menu {
+      width: 100%;
+   }
+   &__button {}
+}
+.menu {
+   max-width: 389px;
+   display: flex;
+   align-items: center;
+   &__list {
+      width: 100%;
+      display: flex;
+      align-items: center;
+   }
+   &__item {
+      font-family: 'Work sans', sans-serif;
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 500;
+      margin-top: 10px;
+      &:not(:last-child){
+         margin-right: 50px;
+         @media (max-width: 1365px) {
+            margin-right: 35px;
+         }
+         @media (max-width: 1023px) {
+            margin-right: 10px;
+         }
+      }
+   }
+}
+
+/*------------Header block-------------*/
+.header-block {
+   background-color: #1F98F0;
+   padding: 35px 0 7px 0;
+   &__header {}
+	&__body {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 767px) {
+         flex-wrap: wrap;
+      }
+   }
+	&__text {
+      flex: 0 1 569px;
+      color: white;
+      @media (max-width: 767px) {
+         flex: 0 1 100%;
+         text-align: center;
+      }
+   }
+	&__title {
+      font-size: 51px;
+      line-height: 130%;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 700;
+      margin-bottom: 30px;
+      @media (max-width: 1365px) {
+         font-size: 44px;
+      }
+      @media (max-width: 1023px) {
+         font-size: 34px;
+      }
+      @media (max-width: 767px) {
+         font-size: 26px;
+         margin-bottom: 25px;
+      }
+      @media (max-width: 479px) {
+         font-size: 20px;
+         margin-bottom: 20px;
+      }
+   }
+	&__subtitle {
+      font-size: 20px;
+      line-height: 150%;
+      margin-bottom: 50px;
+      @media (max-width: 767px) {
+         font-size: 16px;
+         margin-bottom: 40px;
+      }
+      @media (max-width: 479px) {
+         font-size: 12px;
+         margin-bottom: 30px;
+      }
+   }
+	&__buttons {
+      max-width: 409px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 767px) {
+         margin: 0 auto;
+         margin-bottom: 20px;
+      }
+   }
+	&__button {
+      flex: 0 1 50%;
+      &:not(:last-child) {
+         margin-right: 15px;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+      }
+      
+   }
+	&__image {
+      flex: 0 1 670px;
+      @media (max-width: 767px) {
+         flex: 0 1 100%;
+      }
+      margin-left: 10px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+
